@@ -1,5 +1,5 @@
 var Airtable = require('airtable');
-var base = new Airtable({ apiKey: 'keyCsBLjL1cwYff47' }).base('appGe0W4WVOEGimlm');
+var base = new Airtable({ apiKey: window.AIRTABLE_API_KEY }).base('appGe0W4WVOEGimlm');
 
 var found = []
 const options = {
