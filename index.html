@@ -10,10 +10,20 @@
     <script src="https://cdn.jsdelivr.net/npm/fuse.js@6.4.6"></script>
     <script src="airtable.js"></script>
     <script src="script.js"></script>
-    <script>
-        searchSomething('phpdefine').then(result => {
-            console.log(result)
-        })
-    </script>
+    <link rel="stylesheet" href="styles.css">
+
+    <div class="container">
+        <form onsubmit="return search(this)">
+            <input type="text" placeholder="fuzzy search...">
+            <button>Search</button>
+        </form>
+
+        <div class="results">
+            
+        </div>
+    </div>
+    
 </body>
 </html>
+
+

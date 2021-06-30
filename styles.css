@@ -1,0 +1,172 @@
+:root {
+    --radius: 3px;
+    --lightGray: #ccc;
+}
+
+::selection {
+  color: rgb(0, 0, 0);
+  background: yellow;
+}
+
+body {
+    font-family: sans-serif;
+    background-color: rgb(245, 245, 245);
+    height: calc(100vh - 45px);
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    margin: 20px;
+    height: 100%;
+}
+@media (max-width: 768px) {
+    body {
+        margin: 0;
+        min-height: 100vh;
+    }
+}
+
+.markdown-display h1, 
+.markdown-display h2, 
+.markdown-display h3, 
+.markdown-display h4,
+.markdown-display h5,
+.markdown-display h6 {
+    margin-bottom: 0;
+}
+
+.border-top {
+    border-top: 1px solid var(--lightGray);
+}
+.padding-top {
+    padding-top: 1rem;
+}
+
+.container {
+    background-color: white;
+    width: 50%;
+    max-width: 500px;
+    margin: 0 auto;
+    padding: 25px;
+    border-radius: var(--radius);
+    box-shadow: 0px 0px 22px -6px rgba(0,0,0,0.31);
+    box-sizing: border-box;
+}
+@media (max-width: 768px) {
+    .container {
+        width: 100%;
+    }
+}
+
+.files-list {
+    padding-left: 0;
+}
+.files-list li {
+    list-style: none;
+}
+.files-list li a {
+    display: block;
+    line-height: 1.4rem;
+    padding: 2px 0;
+}
+.files-list li a:hover {
+    background-color: rgba(116, 116, 116, 0.31);
+    outline: 4px solid rgba(116, 116, 116, 0.31);
+    color: black;
+    text-decoration: none;
+}
+
+/* Login page: */
+/* form.login {
+    background-color: white;
+    width: 50%;
+    max-width: 500px;
+    margin: 0 auto;
+    padding: 25px;
+    border-radius: var(--radius);
+    box-shadow: 0px 0px 22px -6px rgba(0,0,0,0.31);
+    box-sizing: border-box;
+} */
+form.login h1 {
+    text-align: center;
+}
+form.login p {
+    text-align: center;
+}
+h1.note-title {
+    color: #333;
+    font-size: 2.5rem;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+input[type='password'] {
+    width: 70%;
+    padding: 1rem;
+    font-size: 1.5em;
+}
+input[type='submit'] {
+    font-size: 1.5em;
+    padding: 1rem 2.5rem;
+}
+@media (max-width: 768px) {
+    form.login {
+        width: 100%;
+    }
+}
+
+
+form.edit-file textarea {
+    width: 100%;
+    min-height: 300px;
+}
+
+.copyable {
+    border-top-left-radius: 3px;
+    border-bottom-left-radius: 3px;
+    border-width: 1px;
+    padding-top: 2px;
+    padding-bottom: 2px;
+}
+.copyable:focus {
+    border-width: 1px;
+    box-shadow: 0px 0px 7px -2px rgb(37 186 255);
+    outline: none;
+}
+.copyable + button {
+    width: 2.3rem;
+    border-radius: 3px;
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+    border-width: 1px;
+    padding-top: 1px;
+    padding-bottom: 2px;
+}
+.copyable + button:hover {
+    background-image: linear-gradient(rgb(231, 231, 231), rgb(199, 199, 199));
+    cursor: pointer;
+}
+.copyable + button:active {
+    background-image: linear-gradient(rgb(199, 199, 199), rgb(231, 231, 231));
+    cursor: pointer;
+}
+.copyable + button > img {
+    height: 0.8rem;
+}
+
+
+.result pre {
+    overflow-x: hidden;
+    border-radius: 3px;
+    padding: 10px 14px;
+}
+.result pre ,
+.result code { 
+    background: #ccc;
+}
+.result pre:hover {
+    overflow-x: visible;
+}
+
+.tags code {
+    color: lime;
+    background-color: #111;
+}
