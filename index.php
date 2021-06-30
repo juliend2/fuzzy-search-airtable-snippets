@@ -10,7 +10,7 @@
     <script src="https://cdn.jsdelivr.net/npm/fuse.js@6.4.6"></script>
     <script src="airtable.js"></script>
     <script>
-    window.AIRTABLE_API_KEY = '<?php getenv('AIRTABLE_API_KEY') ?>'
+    window.AIRTABLE_API_KEY = '<?php echo getenv('AIRTABLE_API_KEY') ?>'
     </script>
     
     <script src="script.js"></script>
