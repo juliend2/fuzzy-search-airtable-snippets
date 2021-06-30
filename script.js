@@ -54,6 +54,8 @@ function encodeHTML(str) {
 }
 
 function displayFoundItem(results) {
+    document.querySelector('.results').innerHTML = ''
+    
     if (results.length === 0) {
         alert('Nothing found.')
     } else {
