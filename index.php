@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>FuzzyAir</title>
+    <title>Fuzzy Search</title>
 </head>
 <body>
     <script src="https://cdn.jsdelivr.net/npm/fuse.js@6.4.6"></script>
